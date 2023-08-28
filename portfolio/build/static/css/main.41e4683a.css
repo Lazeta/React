@@ -1,2 +1,0 @@
-.slider{display:flex;height:200px;overflow:hidden;width:300px}.slider-item{flex:0 0 100%;transition:-webkit-transform .3s ease-in-out;transition:transform .3s ease-in-out;transition:transform .3s ease-in-out,-webkit-transform .3s ease-in-out}.slider-item.active{-webkit-transform:translateX(-100%);transform:translateX(-100%)}.spin-button{margin-top:10px}
-/*# sourceMappingURL=main.41e4683a.css.map*/
