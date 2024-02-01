@@ -5,6 +5,7 @@ import { allowedNodeEnvironmentFlags } from "process";
 import Accordion from "./components/Accordion/Accordion";
 import Rating from "./components/Rating";
 import AppTitle from "./components/AppTitle";
+import { isPropertySignature } from "typescript";
 
 // function declaration
 function App() {
@@ -21,6 +22,10 @@ function App() {
       <Rating value={3}/>
       <Accordion />
       <Rating value={5}/>
+      <Accordion title={"Menu"}/>
+      <Accordion title={"Users"}/>
+      <Rating value={5}/>
+      <Rating value={0}/>
     </div>
   );
 }

@@ -1,5 +1,5 @@
-function AccordionTitle() {
-  return <h3>Menu</h3>
+function AccordionTitle(props:any) {
+  return <h3>{props.title}</h3>
 }
 
 export default AccordionTitle;

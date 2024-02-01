@@ -1,10 +1,16 @@
 import AccordionBody from "./AccordionBody";
 import AccordionTitle from "./AccordionTitle";
 
-function Accordion() {
+type AccordionPropsType = {
+  // title: ReactNode;
+  titleValue: string
+}
+
+function Accordion(props:AccordionPropsType) {
   return (
     <div>
-      <AccordionTitle />
+      ---{props.title}---
+      <AccordionTitle title={props.titleValue} />
       <AccordionBody />
     </div>
   );
