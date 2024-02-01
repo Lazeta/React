@@ -1,28 +1,13 @@
-export function Accordion() {
-    return <div>
-      <AccordionTitle/>
-      <AccordionBody/>
-      <h3>Menu</h3>
-      <ul>
-        <li>1</li>
-        <li>2</li>
-        <li>3</li>
-      </ul>
+import AccordionBody from "./AccordionBody";
+import AccordionTitle from "./AccordionTitle";
+
+function Accordion() {
+  return (
+    <div>
+      <AccordionTitle />
+      <AccordionBody />
     </div>
-  }
-  
-function AccordionTitle() {
-    return (
-        <>
-            console.log('Rendering AccordionBody')
-        </>
-    )
-  }
-  
-function AccordionBody() {
-    return (
-        <>
-            console.log('Rendering AccordionBody')
-        </>
-    )
-  }
+  );
+}
+
+export default Accordion;
