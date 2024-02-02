@@ -18,12 +18,12 @@ function App() {
       <input type={'date'}/> */}
       {/* каждая функция обязана быть написана с большой буквы */}
       <AppTitle/>
-      <Accordion />
+      <Accordion titleValue={""} collapsed={false}/>
       <Rating value={3}/>
-      <Accordion />
+      <Accordion titleValue={" "} collapsed={false}/>
       <Rating value={5}/>
-      <Accordion title={"Menu"}/>
-      <Accordion title={"Users"}/>
+      <Accordion titleValue={"Menu"} collapsed={true}/>
+      <Accordion titleValue={"Users"} collapsed={false}/>
       <Rating value={5}/>
       <Rating value={0}/>
     </div>

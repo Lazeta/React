@@ -78,7 +78,7 @@ type StarPropsType = {
 }
 
 
-function Star(props: any) {
+function Star(props: StarPropsType) {
   console.log("Star rendering");
   // debugger
   if (props.selected === true) {

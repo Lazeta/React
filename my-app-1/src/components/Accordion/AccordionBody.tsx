@@ -1,4 +1,8 @@
-function AccordionBody() {
+type AccordionBodyPropsType = {
+  bodyValue: number 
+}
+
+function AccordionBody(props: AccordionBodyPropsType) {
   return (
     <div>
       <ul>
