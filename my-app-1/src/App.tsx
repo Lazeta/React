@@ -1,5 +1,4 @@
 import React from "react";
-// import logo from "./logo.svg";
 import "./App.css";
 import { allowedNodeEnvironmentFlags } from "process";
 import Accordion from "./components/Accordion/Accordion";
@@ -7,6 +6,9 @@ import Rating from "./components/Rating";
 import AppTitle from "./components/AppTitle";
 import { isPropertySignature } from "typescript";
 import styled from "styled-components";
+import { StyledBtn, SuperButton } from "./components/Button.styled";
+import { Link } from "./components/Link.styled";
+import { Menu } from "./components/Menu.styled";
 
 // function declaration
 function App() {
@@ -57,37 +59,6 @@ function App() {
 
 export default App;
 
-const StyledBtn = styled.button`
-  border: none;
-  background-color: #fb3f78;
-  padding: 10px 20px;
-  color: snow;
-  font-size: 2rem;
-  font-weight: bold;
-
-  &:hover {
-    background-color: blue;
-  }
-
-  &:last-child {
-    background-color: lightgreen;
-  }
-`;
-
-const Link = styled.a`
-  color: #4983c3;
-  font-size: 2rem;
-  font-weight: bold;
-  background-color: transparent;
-  padding: 0;
-`;
-
-const SuperButton = styled(StyledBtn)`
-  border-radius: 5px;
-  background-color: #ffe869;
-  color: black;
-`;
-
 const Box = styled.div`
   display: flex;
   height: 100vh;
@@ -102,6 +73,8 @@ const Box = styled.div`
   ${Link} {
     cursor: zoom-in;
   }
-`;
 
-const Menu = styled.nav``;
+  @media screen and (max-width: 800px){
+    flex-direction: column;
+  }
+`
