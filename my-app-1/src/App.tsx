@@ -8,7 +8,6 @@ import AppTitle from "./components/AppTitle";
 import { isPropertySignature } from "typescript";
 import styled from "styled-components";
 
-
 // function declaration
 function App() {
   // Полезное что-то
@@ -34,12 +33,27 @@ function App() {
   // наши стили с разметкой
   return (
     <div className="App">
-      <StyledBtn/>
+      <Menu>
+        <ul>
+          <li><a href="#">menu item 1</a></li>
+          <li><a href="#">menu item 2</a></li>
+          <li><a href="#">menu item 3</a></li>
+        </ul>
+      </Menu>
+
+      <Box>
+        <StyledBtn as={Link} href={"#"}>
+          LinkComponent
+        </StyledBtn>
+        <StyledBtn as="a" href={"#"}>
+          Link
+        </StyledBtn>
+        <StyledBtn>Button</StyledBtn>
+        <SuperButton>Super Button</SuperButton>
+      </Box>
     </div>
-  )
+  );
 }
-
-
 
 export default App;
 
@@ -47,6 +61,47 @@ const StyledBtn = styled.button`
   border: none;
   background-color: #fb3f78;
   padding: 10px 20px;
+  color: snow;
+  font-size: 2rem;
+  font-weight: bold;
+
+  &:hover {
+    background-color: blue;
+  }
+
+  &:last-child {
+    background-color: lightgreen;
+  }
+`;
+
+const Link = styled.a`
+  color: #4983c3;
+  font-size: 2rem;
+  font-weight: bold;
+  background-color: transparent;
+  padding: 0;
+`;
+
+const SuperButton = styled(StyledBtn)`
   border-radius: 5px;
-  color: show;
-`
+  background-color: #ffe869;
+  color: black;
+`;
+
+const Box = styled.div`
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+  button {
+    cursor: pointer;
+  }
+
+  ${Link} {
+    cursor: zoom-in;
+  }
+`;
+
+const Menu = styled.nav``;
