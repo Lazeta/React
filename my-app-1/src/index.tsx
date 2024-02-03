@@ -4,15 +4,17 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { GlobalStyles } from "./components/styles/Global.styled";
+import { ThemeProvider } from "styled-components";
+import { myTheme } from "./components/styles/Theme.styled";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
 root.render(
-  <React.StrictMode>
+  <ThemeProvider theme={myTheme}>
     <App />
     <GlobalStyles />
-  </React.StrictMode>
+  </ThemeProvider>
 );
 
 // If you want to start measuring performance in your app, pass a function

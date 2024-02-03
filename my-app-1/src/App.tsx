@@ -10,6 +10,7 @@ import styled from "styled-components";
 import { Link } from "./components/Link.styled";
 import { Menu } from "./components/Menu.styled";
 import { StyledBtn } from "./components/Button.styled";
+import { myTheme } from "./components/styles/Theme.styled";
 
 // function declaration
 function App() {
@@ -65,8 +66,8 @@ function App() {
         <StyledBtn color={"red"}>Hello</StyledBtn>
         <StyledBtn fontSize={"30px"}>Hello</StyledBtn> */}
 
-        <StyledBtn btnType={"primary"} active>Hello</StyledBtn>
-        <StyledBtn btnType={"outlined"}>Hello</StyledBtn>
+        <StyledBtn color={myTheme.colors.primary} btnType={"primary"} active>Hello</StyledBtn>
+        <StyledBtn color={myTheme.colors.secondary} btnType={"outlined"}>Hello</StyledBtn>
       </Box>
     </div>
   )
@@ -89,7 +90,7 @@ const Box = styled.div`
     cursor: zoom-in;
   }
 
-  @media screen and (max-width: 800px){
+  @media ${myTheme.media.tablet}{
     flex-direction: column;
   }
 `
