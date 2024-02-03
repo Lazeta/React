@@ -6,9 +6,10 @@ import Rating from "./components/Rating";
 import AppTitle from "./components/AppTitle";
 import { isPropertySignature } from "typescript";
 import styled from "styled-components";
-import { StyledBtn, SuperButton } from "./components/Button.styled";
+// import { StyledBtn, SuperButton } from "./components/Button.styled";
 import { Link } from "./components/Link.styled";
 import { Menu } from "./components/Menu.styled";
+import { StyledBtn } from "./components/Button.styled";
 
 // function declaration
 function App() {
@@ -33,28 +34,42 @@ function App() {
   // );
 
   // наши стили с разметкой
+  // return (
+  //   <div className="App">
+  //     <Menu>
+  //       <ul>
+  //         <li><a href="#">menu item 1</a></li>
+  //         <li><a href="#">menu item 2</a></li>
+  //         <li><a href="#">menu item 3</a></li>
+  //       </ul>
+  //     </Menu>
+
+  //     <Box>
+  //       <StyledBtn as={Link} href={"#"}>
+  //         LinkComponent
+  //       </StyledBtn>
+  //       <StyledBtn as="a" href={"#"}>
+  //         Link
+  //       </StyledBtn>
+  //       <StyledBtn>Button</StyledBtn>
+  //       <SuperButton>Super Button</SuperButton>
+  //     </Box>
+  //   </div>
+  // );
+
+  // поработаем с props
   return (
     <div className="App">
-      <Menu>
-        <ul>
-          <li><a href="#">menu item 1</a></li>
-          <li><a href="#">menu item 2</a></li>
-          <li><a href="#">menu item 3</a></li>
-        </ul>
-      </Menu>
-
       <Box>
-        <StyledBtn as={Link} href={"#"}>
-          LinkComponent
-        </StyledBtn>
-        <StyledBtn as="a" href={"#"}>
-          Link
-        </StyledBtn>
-        <StyledBtn>Button</StyledBtn>
-        <SuperButton>Super Button</SuperButton>
+        {/* <StyledBtn color={"green"} fontSize={"20px"}>Hello</StyledBtn>
+        <StyledBtn color={"red"}>Hello</StyledBtn>
+        <StyledBtn fontSize={"30px"}>Hello</StyledBtn> */}
+
+        <StyledBtn btnType={"primary"} active>Hello</StyledBtn>
+        <StyledBtn btnType={"outlined"}>Hello</StyledBtn>
       </Box>
     </div>
-  );
+  )
 }
 
 export default App;

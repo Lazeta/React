@@ -16,6 +16,6 @@ export const GlobalStyles = createGlobalStyle`
         sans-serif;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
-        background-color: #131313;
+        /* background-color: #131313; */
     }
 `;
