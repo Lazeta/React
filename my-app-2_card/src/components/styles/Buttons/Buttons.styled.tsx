@@ -3,7 +3,9 @@ import styled from "styled-components";
 export const Buttons = styled.div`
     display: flex;
     flex-direction: row;
-    min-width: 300px;
+    justify-content: space-between;
+    min-width: 100%;
     gap: 20px;
-    margin-right: 100px;
+    /* margin-right: 100px; */
+    padding: 5px 0px;
 `

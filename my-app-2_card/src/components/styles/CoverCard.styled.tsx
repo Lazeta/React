@@ -1,8 +1,10 @@
 import styled from "styled-components";
+import myImage from "./../../headline.png";
 
-
-export const CoverCard = styled.img`
-    background-image: url('./my-app-2_card/src/headline.png');
-    /* min-width: 250px; */
-    min-height: 220px;
+export const CoverCard = styled.div`
+    max-width: 400px;
+    height: 250px;
+    background-image: url(${myImage});
+    background-size: cover;
+    border-radius: 15px;
 `
