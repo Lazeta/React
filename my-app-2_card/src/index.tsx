@@ -6,10 +6,10 @@ import reportWebVitals from './reportWebVitals';
 import { ThemeProvider } from 'styled-components';
 import { myTheme } from './components/styles/MyTheme.styled';
 
+
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
-
 
 root.render(
   <ThemeProvider theme={myTheme}>
