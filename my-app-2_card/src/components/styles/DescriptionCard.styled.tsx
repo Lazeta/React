@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
 
-export const DescriptionCard = styled.div`
+export const DescriptionCard = styled.p`
     
 `
