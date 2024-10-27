@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/local-storage" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/morse-code" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/my-app-2_card" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/myApp-2_card" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/social_network" vcs="Git" />
+  </component>
+</project>
