@@ -110,7 +110,7 @@ export default function Family({ familyTreeData }) {
                 margin: '0 auto',
                 textAlign: 'justify'
             }}>
-            <span span onClick={expand}>{familyTreeData.name}</span>
+            <span onClick={expand}>{familyTreeData.name}</span>
             {isVisible ? (
                 familyTreeData?.children?.map((child) => {
                     return (
