@@ -22,6 +22,12 @@ export const familyTreeData = {
             {
               name: "Henry",
               age: 57,
+              children: [
+                {
+                  name: "Moly",
+                  age: "29",
+                }
+              ]
             },
           ],
         },
