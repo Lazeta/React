@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import { data } from './Data';
-import Tree from './Tree';
+import Tree from './components/Tree';
 import { NoteForm } from './components/NoteForm';
 
 function App() {
@@ -33,7 +33,7 @@ function App() {
       <div className="line">
         <hr />
       </div>
-      <div>
+      <div style={{ width: "60%", margin: "0 auto" }}>
         <Tree data={data} />
 
         {/* <FilterMenu setFilter={setFilter} /> */}

@@ -13,10 +13,10 @@ export default function Tree({ data }) {
                 padding: 5,
                 cursor: 'pointer',
                 border: '1px solid gray',
-                width: '92%',
+                width: '100%',
                 margin: '0 auto',
                 textAlign: 'justify',
-                backgroundColor: 'orange',
+                backgroundColor: '#f5f5f5',
             }}>
             <span onClick={expand}>{data.title}</span>
             {isVisible ? (
@@ -24,17 +24,17 @@ export default function Tree({ data }) {
                     return (
                         <div
                             style={{
-                                padding: 30,
+                                padding: 10,
                                 cursor: 'pointer',
-                                border: '1px solid white',
+                                border: '1px solid gray',
                                 textAlign: 'justify',
-                                backgroundColor: 'yellow',
+                                backgroundColor: '#e2e2e2',
                             }}>
-                            <Tree data={child} />
+                                <Tree data={child} />
                         </div>
                     )
                 })
             ) : (<></>)}
-        </div >
+        </div>
     )
 }
