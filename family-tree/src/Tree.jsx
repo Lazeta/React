@@ -10,10 +10,10 @@ export default function Tree({ data }) {
     return (
         <div
             style={{
-                padding: 10,
+                padding: 5,
                 cursor: 'pointer',
                 border: '1px solid gray',
-                width: '60%',
+                width: '92%',
                 margin: '0 auto',
                 textAlign: 'justify',
                 backgroundColor: 'orange',
@@ -34,8 +34,7 @@ export default function Tree({ data }) {
                         </div>
                     )
                 })
-            ) :
-                (<></>)}
+            ) : (<></>)}
         </div >
     )
 }
