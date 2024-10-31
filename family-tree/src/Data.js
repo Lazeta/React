@@ -10,26 +10,26 @@ export const data = {
           children: [
             {
               title: "Introduction to React JS",
-              type: "link",
-              url: "https://it-shpora.pp.ua/category/react/",
+              // type: "link",
+              // url: "https://it-shpora.pp.ua/category/react/",
               description: "Learn about React JS.",
             },
             {
               title: "Advanced React JS",
-              type: "link",
-              url: "https://devdocs.io/react/",
+              // type: "link",
+              // url: "https://devdocs.io/react/",
               description: "https://devdocs.io/react/",
             },
             {
               title: "Storybook",
-              type: "link",
-              url: "https://storybook.js.org/docs/writing-stories",
+              // type: "link",
+              // url: "https://storybook.js.org/docs/writing-stories",
               description: "How to write stories",
             },
             {
               title: "React JS Drag to Select",
-              type: "link",
-              url: "https://www.joshuawootonn.com/react-drag-to-select",
+              // type: "link",
+              // url: "https://www.joshuawootonn.com/react-drag-to-select",
               description:
                 "This past summer, I led a project at Makeswift to rework our file manager. Makeswift is a website builder and many of our users have hundreds of files. To manage hundreds of anything you need bulk operations, but bulk operations aren't helpful if selecting things is cumbersome, so drag selection was a key part of my vision for making Makeswift's file manager feel native.",
             },
@@ -135,8 +135,8 @@ export const data = {
           children: [
             {
               title: "Learn more about frameworks",
-              type: "link",
-              url: "https://example.com",
+              // type: "link",
+              // url: "https://example.com",
             },
           ],
         },
@@ -146,8 +146,8 @@ export const data = {
           children: [
             {
               title: "Learn more about DOM Manipulation.",
-              type: "link",
-              url: "https://example.com",
+              // type: "link",
+              // url: "https://example.com",
             },
           ],
         },
@@ -156,8 +156,8 @@ export const data = {
           children: [
             {
               title: "mouse drag and drop",
-              type: "link",
-              url: "https://learn.javascript.ru/mouse-drag-and-drop",
+              // type: "link",
+              // url: "https://learn.javascript.ru/mouse-drag-and-drop",
             },
           ],
         },
@@ -282,13 +282,13 @@ export const data = {
                 },
                 {
                   title: "Learn more about array methods.",
-                  type: "link",
-                  url: "https://learn.javascript.ru/array-methods",
+                  // type: "link",
+                  // url: "https://learn.javascript.ru/array-methods",
                 },
                 {
                   title: "Visual representation of array methods.",
-                  type: "image",
-                  url: "https://www.example.com/path/to/image.jpg",
+                  // type: "image",
+                  // url: "https://www.example.com/path/to/image.jpg",
                 },
               ],
             },
@@ -376,7 +376,7 @@ export const data = {
               title: "CSS Grid Layout",
               type: "image",
               url: "https://i.pinimg.com/enabled_hi/564x/54/e9/87/54e98761c2348545244bf25487c5be23.jpg",
-              // description: "cheat sheet for CSS grid layout",
+              description: "cheat sheet for CSS grid layout",
             },
           ],
         },
