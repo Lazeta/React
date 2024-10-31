@@ -68,7 +68,7 @@ export const NoteForm = ({ addNote }) => {
         </select>
       </div>
       <div className="div5">
-        <Button type="submit">Add note</Button>
+        <Button type="submit" title="Add note"/>
       </div>
     </form>
   );
